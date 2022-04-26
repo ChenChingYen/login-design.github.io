@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body{
+    /* background: -webkit-linear-gradient(to right, #00dbde, #fc00ff); */
+    background: linear-gradient(to top right, #32a5a5, #492cb4, #8d2ac7);
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+}
+
+.center{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper{
+    width: 90%;
+}
+
+table{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 6px 22px 0 rgba( 31, 38, 135, 0.47 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+    table-layout: fixed;
+}
+
+th{
+    background: rgb(85, 71, 163);
+}
+
+td:nth-child(even){
+    background: rgba( 255, 255, 255, 0.02 );
+}
+
+th, td{
+    padding: 12px;
+}
+
+td:hover{
+    background: rgba( 255, 255, 255, 0.35 );
+    transition: 0.20s ease-in;
+}
+
+.button-wrapper{
+    text-align: right;
+    margin: 20px 0;
+}
+
+.button-wrapper button{
+    text-transform: uppercase;
+    padding: 8px 20px;
+}
+
+.edit-button{
+    border-radius: 20px;
+    background-color: rgb(68, 79, 236);
+    border: none;
+    color: white;
+}
+
+.edit-button:hover{
+    background-color: rgb(32, 41, 167);
+    transition: 0.25s ease-in;
+}
+
+.reset-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.reset-button:hover{
+    color: rgb(187, 187, 187);
+    transition: 0.25s ease-in;
+}
